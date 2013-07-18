@@ -1,14 +1,88 @@
-<header class="navbar navbar-fixed-top navbar-inverse">
+<!-- <header class="navbar navbar-fixed-top navbar-inverse">
   <div class="navbar-inner">
     <div class="container">
       <%= link_to "Stock Quote", root_path, id: "logo" %>
       <nav>
+        <ul class="nav pull-left pull-up">
+        <li>
+              <a class="brand" href=""> <img alt="Accrue" src="accrue line logo.png" style="height:70px"> 
+             </a>
+             </li>
+         </ul>    
+
         <ul class="nav pull-right">
+          <li>
+            <form navbar-search action="/result" method="get"> 
+              <input type="text" name="symbol" class="field_input" placeholder="Enter Stock Symbol">
+              <button class="button btn btn-success">Search</button>
+            </form> 
+          </li>
           <li><%= link_to "Home", root_path %></li>
           <li><%= link_to "About", about_path %></li>    
+          <li><%= link_to "Contact", about_path %></li>    
         </ul>
       </nav>
     </div>
-  </div>
-</header>
+  </div> 
+ -->
+    <!-- Le styles -->
+    <link href="../assets/css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 69px 0;
+      }
+
+      @media (max-width: 980px) {
+        /* Enable use of floated navbar text */
+        .navbar-text.pull-right {
+          float: none;
+          padding-left: 5px;
+          padding-right: 5px;
+        }
+      }
+    </style>
+    <link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+                     
+     </div>
   
+          <div class="nav-collapse collapse">
+            <p class="navbar-text pull-right">
+            </p>
+            <li>
+              <a class="brand" href=""> <img alt="Accrue" src="accrue line logo.png" style="height:70px"> 
+             </a>
+             </li>
+            <ul >
+              <li class="nav pull-right">
+           <form navbar-search action="/result" method="get"> 
+              <input type="text" name="symbol" class="field_input" placeholder="Enter Stock Symbol">
+              <button class="button btn btn-success">Search</button>
+            </form> 
+            </li>
+            <ul class="nav pull-right">
+              <li ><%= link_to "Home", root_path %></li>
+              <li><%= link_to "About", about_path %></li>    
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </ul>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+</header>
+ 

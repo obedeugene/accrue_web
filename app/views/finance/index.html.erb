@@ -1,12 +1,38 @@
-<div class="container"> 
+
+
+
+  <div class="hero-unit">
   <% flash.each do |key, value| %>
     <p class="alert alert-error"><%= key %> <%= value %></p>
   <% end %>
 
-  <h1>Stock Market Quotes</h1>
+  <h1>Stock Market Analysis</h1>
   <h3>Search by Company Symbol to Look Up Quotes</h3>
   <form action="/result" method="get">
     <input type="text" name="symbol" class="field_input" placeholder="Enter Stock Symbol">
     <button class="button btn btn-success">Search</button>
   </form>
 </div>
+
+
+
+ 
+<!--         <div class="span12">
+ -->          
+          <div class="row-fluid">
+            <div class="span4">
+              <h1>Probability</h1>
+              <p> Stock </p>
+              <p><a class="btn" href="#">View details &raquo;</a></p>
+            </div><!--/span-->
+            <div class="span4">
+              <h1>Projection</h1>
+              <p>Stock. </p>
+              <p><a class="btn" href="#">View details &raquo;</a></p>
+            </div><!--/span-->
+            <div class="span4">
+              <h1>Analysis</h1>
+              <p>Stock </p>
+              <p><a class="btn" href="#">View details &raquo;</a></p>
+            </div><!--/span-->
+          </div><!--/row-->
