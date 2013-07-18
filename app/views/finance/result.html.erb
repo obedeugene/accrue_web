@@ -1,0 +1,12 @@
+<div class="container">
+<%= link_to "<<Back", :back %>   
+  <h2>Stock Quote for <%= @quote.name %></h2>
+  <ul class="data">
+  <li><span class="sub_headings">Date:</span> <%= @quote.date %></li>
+  <li><span class="sub_headings">Time:</span>  <%= @quote.time %></li>
+  <li><span class="sub_headings">Day High:</span>  <%= @quote.dayHigh %></li>
+  <li><span class="sub_headings">Day Low:</span>  <%= @quote.dayLow %></li>
+  <li><span class="sub_headings">Last Trade:</span>  <%= @quote.lastTrade %></li>
+  <li><span class="sub_headings">Symbol:</span>  <%= @quote.symbol %></li>
+  </ul>
+</div>  

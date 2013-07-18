@@ -1,0 +1,12 @@
+<div class="container"> 
+  <% flash.each do |key, value| %>
+    <p class="alert alert-error"><%= key %> <%= value %></p>
+  <% end %>
+
+  <h1>Stock Market Quotes</h1>
+  <h3>Search by Company Symbol to Look Up Quotes</h3>
+  <form action="/result" method="get">
+    <input type="text" name="symbol" class="field_input" placeholder="Enter Stock Symbol">
+    <button class="button btn btn-success">Search</button>
+  </form>
+</div>
